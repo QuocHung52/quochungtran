@@ -20,7 +20,6 @@
     --white-blue: #dcebff;
 
     --nav-bar-height: 70px;
-    --background-img: url('../img/cover.jpg');
 }
 
 * {
@@ -33,7 +32,6 @@ body {
     font-family: 'Roboto Slab', sans-serif;
     font-size: 1.2rem;
     line-height: 1.5;
-    background-color: var(--light-grey);
     background-color: var(--navy);
     color: var(--dark-slate);
 }
@@ -54,7 +52,13 @@ ul {
 
 /* Home */
 /* - Navbar */
-#home { background: var(--background-img) no-repeat 60% 30%/cover;}
+#home { 
+    background-image: url(../img/cover.jpg);
+    background-position-x: 60%;
+    background-position-y: 30%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 .home {
     position: relative;
     height: 100vh;
